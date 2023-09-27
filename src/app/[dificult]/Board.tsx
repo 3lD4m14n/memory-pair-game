@@ -131,6 +131,7 @@ function Board({
       style={{
         gridTemplateRows: `repeat(${sqrt}, 1fr)`,
         gridTemplateColumns: `repeat(${sqrt}, 1fr)`,
+        fontSize: `${90 / (sqrt * 2)}vh`,
       }}
       className="grid gap-1 w-full h-full"
     >

@@ -9,7 +9,7 @@ function Card({ emoji, isFlipped, handleClick }: CardProps) {
   return (
     <div
       style={{ transform: `rotateY(${isFlipped ? "180deg" : "0deg"})` }}
-      className=" flex justify-center items-center transition-transform bg-white w-full h-full rounded-lg shadow-lg cursor-pointer text-[5vw]"
+      className=" flex justify-center items-center transition-transform bg-white w-full h-full rounded-lg shadow-lg cursor-pointer text-[1em]"
       onClick={handleClick}
     >
       {isFlipped ? emoji : ""}
