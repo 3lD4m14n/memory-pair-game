@@ -18,7 +18,7 @@ function getEmojis(numberEmojis: number) {
 
 function Game({ params }: { params: { dificult: string } }) {
   //perimeter is dificult + 1, max dificult is 9, so max perimeter is 10, validate that perimeter is not greater than 10
-  const perimeter = Math.min(parseInt(params.dificult) + 1, 10);
+  const perimeter = Math.min(parseInt(params.dificult) * 2, 10);
   const numberTokens = perimeter ** 2;
   const [selectedToken, setSelectedToken] = useState<number>(-1);
   const [emojisArray, setEmojisArray] = useState(getEmojis(numberTokens / 2));
